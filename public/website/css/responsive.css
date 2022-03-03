@@ -1,0 +1,54 @@
+@media screen and (max-width: 1920px) {
+
+
+    .sec1_img::before {
+       right: 25%;
+    width: 76.5%;
+    height: 65%;
+    }
+
+    .sec3_img::before,
+    .sec5_img::before {
+        left: 0;
+        width: 64%;
+        height: 71%;
+    }
+
+
+    .sec4_img::before,
+    .sec6_img::before {
+
+        width: 65%;
+        height: 73%;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+
+
+    .sec1_img::before {
+        right: 15%;
+        width: 85.5%;
+        height: 65%;
+
+    }
+
+       .sec3_img::before,
+    .sec5_img::before {
+        width: 70%;
+    height: 66%;
+    left: 20%;
+    }
+
+
+    .sec4_img::before,
+    .sec6_img::before {
+
+            width: 70%;
+    height: 66%;
+    }
+}
+
+    
+    }
+}

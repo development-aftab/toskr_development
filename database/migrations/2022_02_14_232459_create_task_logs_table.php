@@ -1,0 +1,39 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+
+class CreateTaskLogsTable extends Migration {
+
+	/**
+	 * Run the migrations.
+	 *
+	 * @return void
+	 */
+	public function up()
+	{
+		Schema::create('task_logs', function(Blueprint $table)
+		{
+			$table->increments('id');
+			$table->timestamps();
+			$table->softDeletes();
+			$table->string('task_id', 191)->nullable();
+			$table->string('activity_name', 191)->nullable();
+			$table->string('process', 191)->nullable();
+			$table->text('status', 65535)->nullable();
+			$table->text('note', 65535)->nullable();
+		});
+	}
+
+
+	/**
+	 * Reverse the migrations.
+	 *
+	 * @return void
+	 */
+	public function down()
+	{
+		Schema::drop('task_logs');
+	}
+
+}
